@@ -1,0 +1,20 @@
+.movieContainer{
+   /*  background-image:url('../../public/images/CINEMA2.jpg');
+    background-size:cover;  */
+
+  /*   background: url('../../public/images/CINEMA2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; */
+    
+    margin-top: 2px; 
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+   /*  border: 1px solid yellowgreen; */
+    
+
+}

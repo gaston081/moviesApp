@@ -1,0 +1,48 @@
+.container{
+
+    /* background-image:url(../../../public/images/film.png);
+    background-size:300px;  */
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    margin: 15px;
+    height: 310px;
+    width: 220px;
+   
+    background-color:  rgb(69, 73, 73);
+    backdrop-filter: blur(5px);
+    
+    color:rgb(252, 246, 246);
+    font-size: 0.8rem;
+    /* border-image-source: url('../../../public/images/film.png');
+    border-image-slice: 55;
+    border-image-repeat: round; */
+    box-shadow: rgba(184, 179, 179, 0.25) 0px 25px 50px -12px;
+}
+.poster{
+    width: 220px;
+    height: 230px;
+    padding:0px;
+}
+
+.icono {
+    position: absolute;
+    z-index: 1;
+    transform: translate(80px, 270px);
+    color: red;
+    border: none;
+  }
+  .icono:hover{
+    cursor:pointer;
+  }
+  /* label{ color:rgb(19, 158, 49);}
+  input[type = "radio"]{ display:none;} */
+  /* label:hover{color:orange;} */
+  /* label:hover ~ label{color:orange;} */
+ /*  input[type = "radio"]:checked ~ label{color:rgb(255, 0, 0);} */
+ /*  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  } */
+

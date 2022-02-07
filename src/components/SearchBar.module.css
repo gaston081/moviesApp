@@ -1,0 +1,45 @@
+.input{
+    width: 20rem;
+    height: 2.1rem;
+    border-radius: 12px;
+    margin-top: 0rem;
+    padding-left: 1rem;
+    border: 1px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    font-size: 1.3rem;
+    color: white;
+    
+}
+
+.grupo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:9rem
+    
+    
+}
+.grupo_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.btn{
+    margin: 1rem;
+    width: 7rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius:5px;
+    background-color: rgb(170, 32, 32);
+    color: white;
+    border: 1px solid white;
+    letter-spacing: 1px;
+    cursor:pointer
+    
+}
+
+.btn:hover{
+
+}
