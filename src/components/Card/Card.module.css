@@ -10,15 +10,15 @@
     height: 310px;
     width: 220px;
    
-    background-color:  rgb(69, 73, 73);
-    backdrop-filter: blur(5px);
+    background-color: rgba(102, 99, 99, 0.459);
+    backdrop-filter: blur(10px);
     
     color:rgb(252, 246, 246);
     font-size: 0.8rem;
     /* border-image-source: url('../../../public/images/film.png');
     border-image-slice: 55;
     border-image-repeat: round; */
-    box-shadow: rgba(184, 179, 179, 0.25) 0px 25px 50px -12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .poster{
     width: 220px;

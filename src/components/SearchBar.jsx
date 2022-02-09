@@ -34,7 +34,7 @@ export default function SearchBar({ movies }) {
             placeholder='Buscar titulo'
             onChange={handleChange} 
             value={input}></input>
-            <button className={styles.btn} onClick={handleClick}>Buscar</button>
+            <button className={styles.btn} onClick={handleClick}>BUSCAR</button>
         </div>
 
     )

@@ -18,13 +18,8 @@
     grid-template-areas:
             "image data data"
             "image data data";
-
-       /*  "header header header header"
-        ".      nav    main   .     "
-        "footer footer footer footer" */
-        /* border: 2px solid rgb(37, 37, 39); */
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        margin-top: 3rem
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-top: 3rem
 }
 
 .container .image {
@@ -40,6 +35,7 @@
     flex-direction:column;
     justify-content:space-around;
     color: #fff;
-    background-color: rgb(69, 73, 73);
+    background-color: rgba(128, 128, 128, 0.24);
+     backdrop-filter: blur(9px);
 
 }

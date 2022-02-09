@@ -18,56 +18,52 @@ export const Card = ({ title, poster, year, id }) => {
 
   let fav;
 
-
-  //useEffect(() => {
-    if (favoritesRedux === undefined) {
-      fav = false
-    } else {
-      fav = favoritesRedux.some(c => c.imdbID === id)
-    }
- // }, [favoritesRedux,id])
-
-
-  
-  function onclickFav(e, id, fav) {
-    e.preventDefault();
-    dispatch(addMovieFavorite(id))
-    
-   
-  }
-
-  function onClickRemove(e, id, fav ) {
-    e.preventDefault();
-    dispatch(removeMovieFavorite(id))
-   
-    
-  }
+  favoritesRedux === undefined
+    ? fav = false
+    : fav = favoritesRedux.some(c => c.imdbID === id)
 
 
 
-  return (
-    <>
-      <div className={styles.container}>
-        <FormGroup row>
-          <FormControlLabel
-            checked={fav}
-            className={styles.icono}
-            control={<Checkbox icon={<StarBorder color='primary' />} checkedIcon={<Star color='warning' />} name="checkedH" />}
-            label=""
-            onChange={fav? (e) => onClickRemove(e, id) : (e) => onclickFav(e, id)}
-            
-          />
-        </FormGroup>
-        <Link to ={"/MovieDetails/"+id}>
-          <img className={styles.poster} src={poster} alt='imagen no encontrada' />
-        </Link>
-        <p style={{ "padding": "10px" }}>{title}</p>
-        <p>año: {year}</p>
 
-      </div>
+function onclickFav(e, id, fav) {
+  e.preventDefault();
+  dispatch(addMovieFavorite(id))
 
-    </>
 
-  )
+}
+
+function onClickRemove(e, id, fav) {
+  e.preventDefault();
+  dispatch(removeMovieFavorite(id))
+
+
+}
+
+
+
+return (
+  <>
+    <div className={styles.container}>
+      <FormGroup row>
+        <FormControlLabel
+          checked={fav}
+          className={styles.icono}
+          control={<Checkbox icon={<StarBorder color='primary' />} checkedIcon={<Star color='warning' />} name="checkedH" />}
+          label=""
+          onClick={fav ? (e) => onClickRemove(e, id) : (e) => onclickFav(e, id)}
+
+        />
+      </FormGroup>
+      <Link to={"/MovieDetails/" + id}>
+        <img className={styles.poster} src={poster} alt='imagen no encontrada' />
+      </Link>
+      <p style={{ "padding": "10px" }}>{title}</p>
+      <p>año: {year}</p>
+
+    </div>
+
+  </>
+
+)
 
 }

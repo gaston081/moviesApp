@@ -1,11 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import styles from './Nav.module.css';
 import moviesLogo from '../../ImagesLogo/moviesLogo.png'
-
-
 import SearchBar from '../SearchBar';
-import { useSelector } from 'react-redux';
+import { Star } from '@mui/icons-material';
 
 export default function NavBar() {
 
@@ -25,7 +24,7 @@ export default function NavBar() {
             <nav className={styles.nav}>
                 <ul className={styles.list} >
                     <li><NavLink exact to="/" className={styles.item}>Home</NavLink></li>
-                    <li> <NavLink to="/favorites" className={styles.item} >Favoritas</NavLink></li>
+                    <li> <NavLink to="/favorites" className={styles.item} >Favoritas<Star color="warning"/></NavLink></li>
                     <li><NavLink exact to="/" className={styles.item}>About</NavLink> </li>
                 </ul>
             </nav>
