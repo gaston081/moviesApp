@@ -25,7 +25,7 @@ export default function NavBar() {
                 <ul className={styles.list} >
                     <li><NavLink exact to="/" className={styles.item}>Home</NavLink></li>
                     <li> <NavLink to="/favorites" className={styles.item} >Favoritas<Star color="warning"/></NavLink></li>
-                    <li><NavLink exact to="/" className={styles.item}>About</NavLink> </li>
+                    {/* <li><NavLink  to="/About" className={styles.item}>About</NavLink> </li> */}
                 </ul>
             </nav>
         </header>
