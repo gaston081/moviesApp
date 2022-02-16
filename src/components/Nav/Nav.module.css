@@ -45,11 +45,7 @@
 
 }
 
-.nav{
-   
-    /* display: flex;
-    flex-direction: row;     */    
-}
+
 
 .title{
     font-size:2rem;
@@ -89,7 +85,7 @@
     transition: 0.4s ease; 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 380px) {
     .header{
         height: auto;
         flex-direction: column;
@@ -107,4 +103,24 @@
       display:flex;
   }
 
-  
+  @media screen and (max-width: 820px) {
+   
+   
+    .header{
+        height: auto;
+        flex-direction: column;
+        
+    }
+
+    .list {
+      display: flex;
+      flex-direction:column;
+      padding-top: 30px;  
+    }
+    
+  }
+
+  .item{
+      display:flex;
+  }
+

@@ -24,7 +24,7 @@ export const Favorites = () => {
           />)}
         </div>
         : <div className={styles.containerEmpty}>
-          <h1 >No hay favoritos guardados</h1>
+          Aun no hay favoritos 
         </div>
       }
     </div>

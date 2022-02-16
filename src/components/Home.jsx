@@ -12,11 +12,9 @@ export default function Home() {
 
     return (
         <div className={styles.home}>
-            {/*  < div className={styles.nav}>
-                <Nav />
-            </div> */}
+
             {!movies.length && <div className={styles.data}>
-                <h1>Bienvenido a MoviesApp!</h1>
+                <div>Bienvenido a MoviesApp!</div>
                 <br />
                 <p>Hola! Mi nombre es Gaston Ripamonti, soy Desarrollador Full Stack.
                     <br />

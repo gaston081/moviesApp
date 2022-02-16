@@ -35,23 +35,29 @@
     
 } 
 
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    width: 7rem;
-    height: 1.7rem;
-    font-size: 1rem;
-    border-radius:5px;
-    background-color: rgb(170, 32, 32);
-    color: white;
-    border: 1px solid white;
-    letter-spacing: 1px;
-    cursor:pointer
+
+
+
+@media screen and (max-width: 360px) {
+
+    .grupo_nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
     
 }
 
-.btn:hover{
+@media screen and (max-width: 800px) {
+
+
+    .grupo_nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
 
 }

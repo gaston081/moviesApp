@@ -7,6 +7,9 @@ import store from './store/index.js';
 
 
 
+
+
+
 ReactDOM.render(
   
   <Provider store = {store}>

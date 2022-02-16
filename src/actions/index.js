@@ -1,10 +1,10 @@
 
 let apiKey = '6d022ee2'
-
+//`http://www.omdbapi.com/?apikey=6d022ee2&i=${id}`
 
 export function getMovieDetail(id) {
    return function(dispatch) {
-       return fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`)
+       return fetch(`http://www.omdbapi.com/?apikey=6d022ee2&i=${id}`)
          .then(response => response.json())
          .then(json => {
            dispatch({ type: "GET_DETAILS", payload: json });

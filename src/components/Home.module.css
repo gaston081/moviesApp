@@ -55,6 +55,16 @@
      margin: 4rem;
      background-color: rgba(128, 128, 128, 0.24);
      backdrop-filter: blur(7px);
-
+     text-shadow: 0 0 5px black;
 
 }
+.data div {
+     font-size: 1.8rem;
+}
+
+@media screen and (max-width: 375px) {
+     .data {
+          height: 23rem;
+          width:20rem;
+     }
+ }

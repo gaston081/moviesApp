@@ -20,6 +20,7 @@ const useStyles = makeStyles({
 });
 
 
+
 export default function SearchBar({ movies }) {
 
     const classes = useStyles();

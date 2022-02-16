@@ -7,7 +7,6 @@ import {
   Route
 } from "react-router-dom";
 import { Favorites } from './components/Favorites';
-import About from './components/About';
 import MovieDetails from './components/MovieDetails';
 
 
@@ -20,8 +19,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/favorites" element={<Favorites />} />
-            <Route path="/MovieDetails/:id" element={<MovieDetails />} />
-            <Route path="/About" element={<About />} />
+            <Route path="/MovieDetails/:id" element={<MovieDetails />} />        
         </Routes>
       </BrowserRouter>
     </>

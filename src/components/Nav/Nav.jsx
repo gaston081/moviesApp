@@ -9,7 +9,7 @@ import { Star } from '@mui/icons-material';
 export default function NavBar() {
 
     const movies = useSelector(state => state.moviesLoaded)
-    console.log(movies)
+
 
 
     return (
