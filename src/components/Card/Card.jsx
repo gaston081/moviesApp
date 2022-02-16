@@ -1,7 +1,6 @@
 
 import { Star, StarBorder } from "@mui/icons-material"
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material"
-import React, { useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 import { addMovieFavorite, removeMovieFavorite } from "../../actions"
