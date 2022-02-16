@@ -14,17 +14,17 @@ const MovieDetails = () => {
 
       useEffect(() => { dispatch(getMovieDetail(id)) }, [dispatch, id])
 
-      const [change, setChange] = useState(true);
+      const [loading, setLoading] = useState(true);
 
       setTimeout(() => {
-            setChange(false)
+            setLoading(false)
       }, 400);
 
       return (
             <div className={styles.body}>
 
 
-                  {change ? <div className={styles.spinner}></div>
+                  {loading ? <div className={styles.spinner}></div>
                         : <div className={styles.container}>
                               <img className={styles.image} src={detail.Poster} alt="img not found" />
                               <div className={styles.data}>
